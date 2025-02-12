@@ -1,0 +1,28 @@
+.page-count-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.page-btn {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgb(62, 62, 149);
+  color: #fff;
+  border: none;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pageNo {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  line-height: 22px;
+}

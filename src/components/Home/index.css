@@ -1,0 +1,125 @@
+.movie-page {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-container {
+  align-self: center;
+  display: flex;
+  flex-direction: space-evenly;
+  flex-wrap: wrap;
+  font-family: 'Roboto';
+  margin-left: 5%;
+}
+
+.movie-card {
+  width: 240px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  box-shadow: 1px 1px 1px 1px grey;
+  border-radius: 10px;
+}
+
+.movie-poster-image {
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movie-title {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.release-and-rating-container {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.sub-heading {
+  margin-left: 6.5%;
+}
+
+.release-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  margin: 0px;
+  align-self: center;
+}
+
+.movie-rating {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.rating-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.rating-star {
+  color: white;
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.loader-container {
+  align-self: center;
+  margin-top: 8%;
+}
+
+.failure-view-container {
+  align-self: center;
+  margin-top: 8%;
+}
+
+.failure-heading {
+  font-family: 'Roboto';
+  font-size: 28px;
+  color: #000;
+  font-weight: 800;
+}
+
+.retry-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgb(77, 77, 177);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100px;
+  height: 40px;
+  border: 0px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 376px) {
+  .movie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .movie-page {
+    width: 100%;
+  }
+}
