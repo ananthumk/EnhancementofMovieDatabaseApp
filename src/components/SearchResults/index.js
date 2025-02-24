@@ -95,7 +95,7 @@ class SearchResults extends Component {
     return (
       <>
         <Navbar />
-        <h2 className="sub-heading">Search Results for "{query}"</h2>
+        <h2 className="sub-heading">{`Search Results for ${query}`}</h2>
         <div className="movie-page">
           {this.renderSearchResults()}
           <Pagination

@@ -65,7 +65,6 @@ class TopRated extends Component {
                 <h1 className="movie-title">{eachMovie.title}</h1>
                 <div className="rating-container">
                   <p className="movie-rating">{`${rating}%`}</p>
-                  <p className="movie-vote-average">{eachMovie.votingAvg}</p>
                 </div>
               </div>
               <div className="release-and-rating-container">

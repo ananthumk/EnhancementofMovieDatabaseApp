@@ -15,10 +15,6 @@ class SingleMovie extends Component {
     this.getSingleMovieDetails()
   }
 
-  onRetryBtn = () => {
-    this.setState({isloading: true}, this.getSingleMovieDetails)
-  }
-
   getSingleMovieDetails = async () => {
     const {match} = this.props
     const {params} = match
@@ -43,8 +39,6 @@ class SingleMovie extends Component {
       }
       this.setState({
         movieDetails: updatedData,
-        isloadingm: false,
-        failedToFetchm: false,
       })
     } else {
       this.setState({isloadingm: false, failedToFetchm: true})

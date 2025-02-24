@@ -3,7 +3,9 @@
   overflow: auto;
   height: 100vh;
   display: flex;
+  width: 100%;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 .movie-bg-container {
   height: 50vh;
@@ -18,6 +20,8 @@
   border-radius: 10px;
   width: 270px;
   height: 300px;
+  align-self: center;
+  margin-top: 30px;
 }
 
 .movie-details {
@@ -59,7 +63,8 @@
 
 .cart-card {
   width: 120px;
-  height: 230px;
+  min-height: 230px;
+  max-height: 350px;
   box-shadow: 1px 1px 1px 1px black;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.81);
@@ -68,6 +73,7 @@
 .cast-profile {
   height: 150px;
   width: 100%;
+  
 }
 
 .cast-name {
@@ -97,4 +103,40 @@
 
 .wrapper-item-container {
   padding: 10px;
+}
+
+@media screen and (max-width: 476px) {
+  .single-movie-container {
+    padding-bottom: 20px;
+  }
+  .movie-bg-container {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    flex-direction: column;
+    max-height: 140vh;
+    padding-top: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .release-genre-time-container {
+    width: 90%;
+  }
+  .rating-container {
+    margin-top: 10px;
+  }
+  .movie-overview {
+    width: 90%;
+  }
+  .movie-name {
+    text-align: center;
+  }
 }
