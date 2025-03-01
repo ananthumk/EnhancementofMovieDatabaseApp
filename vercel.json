@@ -5,7 +5,11 @@
   "framework": "create-react-app",
   "build": {
     "env": {
-      "NPM_FLAGS": "--legacy-peer-deps"
+      "NPM_FLAGS": "--legacy-peer-deps",
+      "NODE_OPTIONS": "--openssl-legacy-provider"
     }
+  },
+  "env": {
+    "NODE_OPTIONS": "--openssl-legacy-provider"
   }
 }
